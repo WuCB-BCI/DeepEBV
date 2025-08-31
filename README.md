@@ -1,13 +1,15 @@
-Prerequisites
-Pyhton（3.7）
-Tensorflow（1.13.1）(an open source software library for high performance numerical computation https://pypi.org/project/tensorflow/)
-Keras（2.2.4）（the Python deep learning API https://keras.io/）
-Scikit-learn（0.24）（Free software machine learning library for Python programming language https://scikit-learn.org/stable/）
-PyCharm（A professional Python IDE https://www.jetbrains.com/pycharm/）
-Anaconda（1.9.7）(An open source Python distribution， https://www.anaconda.com/)
-CUDA（10.0.130）（Computing platform launched by graphics card manufacturer NVIDIA https://developer.nvidia.com/cuda-toolkit-archive）
-Cudnn（7.0）（GPU accelerated library for deep neural networks https://developer.nvidia.com/rdp/cudnn-archive）
-Among them, Tensorflow is equipped with a GPU version, which can use GPU for accelerated calculations, and needs to match with CUDA and Cudnn.（See for details https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html）
+# DeepEBV: a deep learning model to predict Epstein–Barr virus (EBV) integration sites
+* Liang J, Cui Z, Wu C, et al. DeepEBV: a deep learning model to predict Epstein–Barr virus (EBV) integration sites[J]. Bioinformatics, 2021, 37(20): 3405-3411.
+# Prerequisites
+* Pyhton（3.7）
+* Tensorflow（1.13.1）(an open source software library for high performance numerical computation https://pypi.org/project/tensorflow/)
+* Keras（2.2.4）（the Python deep learning API https://keras.io/）
+* Scikit-learn（0.24）（Free software machine learning library for Python programming language https://scikit-learn.org/stable/）
+* PyCharm（A professional Python IDE https://www.jetbrains.com/pycharm/）
+* Anaconda（1.9.7）(An open source Python distribution， https://www.anaconda.com/)
+* CUDA（10.0.130）（Computing platform launched by graphics card manufacturer NVIDIA https://developer.nvidia.com/cuda-toolkit-archive）
+* Cudnn（7.0）（GPU accelerated library for deep neural networks https://developer.nvidia.com/rdp/cudnn-archive）
+* Among them, Tensorflow is equipped with a GPU version, which can use GPU for accelerated calculations, and needs to match with CUDA and Cudnn.（See for details https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html）
 
 
 Most of the dependencies can be installed through pip install with version number, e.g.
