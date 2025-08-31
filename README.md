@@ -1,5 +1,5 @@
 # DeepEBV: a deep learning model to predict Epstein–Barr virus (EBV) integration sites
-* Liang J, Cui Z, Wu C, et al. DeepEBV: a deep learning model to predict Epstein–Barr virus (EBV) integration sites[J]. Bioinformatics, 2021, 37(20): 3405-3411.
+* Liang J, Cui Z, Wu C, et al. DeepEBV: a deep learning model to predict Epstein–Barr virus (EBV) integration sites[J]. Bioinformatics, 2021, 37(20): 3405-3411. DOI: 10.1093/bioinformatics/btab388
 # Prerequisites
 * Pyhton（3.7）
 * Tensorflow（1.13.1）(an open source software library for high performance numerical computation https://pypi.org/project/tensorflow/)
@@ -12,24 +12,22 @@
 * Among them, Tensorflow is equipped with a GPU version, which can use GPU for accelerated calculations, and needs to match with CUDA and Cudnn.（See for details https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html）
 
 
-Most of the dependencies can be installed through pip install with version number, e.g.
-pip install tensorflow==1.13.1
-
-
-File Description:
-1*EBVData: The folder for storing data. There are two files, dsVIS_Data and VISDB_Data.
-dsVIS_Data:
+# EBVData: The folder for storing data. There are two files, dsVIS_Data and VISDB_Data.
+* dsVIS_Data:
 The positive data dsVIS_pos_Data.mat with a size of 2663×2000 and the negative data dsVIS_neg_Data.mat with a size of 26630×2000, each row of which is one piece of data.
-VISDB_Data:
+* VISDB_Data:
 The positive data VISDB_pos_Data.mat with a size of 1104×2000 and the negative data VISDB_neg_Data.mat with a size of 11040×2000, each row of which is one piece of data.
-2*Model: Store the trained DeepEBV model
+# Model
+* Store the trained DeepEBV model
 
-3*Test_result: used to store model test results
+# Test_result
+* used to store model test results
 
-4*EBVDataProcessing.py: This is a program dedicated to data processing, which takes all data to one_ Hot coding.
+ # Code
+* EBVDataProcessing.py: This is a program dedicated to data processing, which takes all data to one_ Hot coding.
 
-5*DeepEBV.py: This is the main program, including model creation, loading and testing
+* DeepEBV.py: This is the main program, including model creation, loading and testing
 
-Run: 
-1*Run first EBVDataProcessing.py After data encoding, dsVIS_Test_Data.npy, dsVIS_Test_Label.npy, VISDB_Test_Data.npy and VISDB_Test_Label.npy files will be generated and stored in ebvdata folder 
-2* Run after DeepEBV.py, At the end of the run, the test results will be stored in test_ Results folder.
+# Run 
+* Run first EBVDataProcessing.py After data encoding, dsVIS_Test_Data.npy, dsVIS_Test_Label.npy, VISDB_Test_Data.npy and VISDB_Test_Label.npy files will be generated and stored in ebvdata folder 
+* Run after DeepEBV.py, At the end of the run, the test results will be stored in test_ Results folder.
