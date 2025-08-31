@@ -12,7 +12,7 @@
 * Among them, Tensorflow is equipped with a GPU version, which can use GPU for accelerated calculations, and needs to match with CUDA and Cudnn.（See for details https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html）
 
 
-# EBVData: The folder for storing data. There are two files, dsVIS_Data and VISDB_Data.
+# EBVData
 * dsVIS_Data:
 The positive data dsVIS_pos_Data.mat with a size of 2663×2000 and the negative data dsVIS_neg_Data.mat with a size of 26630×2000, each row of which is one piece of data.
 * VISDB_Data:
